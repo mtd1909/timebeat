@@ -1,0 +1,73 @@
+.main__about {
+  padding-bottom: 260px;
+  .container__fluid {
+    position: relative;
+    .about__left-hand {
+      position: absolute;
+      top: -210px;
+      left: 12px;
+    }
+    .about__right-hand {
+      position: absolute;
+      right: 12px;
+      top: -22px;
+    }
+    .about__header {
+      height: 80px;
+      border-top: 1px solid var(--black-color);
+      border-bottom: 1px solid var(--black-color);
+      align-items: center;
+      justify-content: space-around;
+      margin-bottom: 100px;
+      .about__header-text {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+      }
+      .about__title {
+        position: relative;
+        text-transform: uppercase;
+        font-size: 64px;
+        text-align: center;
+        background: var(--white-color);
+        line-height: 74px;
+        &:before {
+          content: " ";
+          width: 11px;
+          height: 11px;
+          background-color: var(--black-color);
+          position: absolute;
+          border-radius: 50%;
+          top: 50%;
+          left: -20px;
+          transform: translateY(-50%);
+        }
+        &:after {
+          content: " ";
+          width: 11px;
+          height: 11px;
+          background-color: var(--black-color);
+          position: absolute;
+          border-radius: 50%;
+          top: 50%;
+          right: -20px;
+          transform: translateY(-50%);
+        }
+      }
+    }
+    .about__text {
+      font-family: "SVN-Gotham";
+      max-width: 906px;
+      text-align: center;
+      margin: 0 auto;
+      font-weight: 400;
+    }
+    .about__frame {
+      display: block;
+      margin: 10px auto;
+    }
+  }
+}

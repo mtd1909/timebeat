@@ -1,0 +1,128 @@
+:root {
+  --purple-color: #72147E;
+  --pink-color: #F21170;
+  --yellow-color: #FA9905;
+  --orange-color: #FF5200; 
+  --black-color: #000000;
+  --grey-color: #333333;
+  --white-color: #FFFFFF;
+  --not-black: #222222;
+}
+/***** Start Reset CSS *****/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  word-break: break-word;
+}
+
+body {
+  font-family: "Space Mono";
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 95px;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 53px;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.author {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18;
+}
+
+.body__text {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.main__wrap {
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black-color);
+}
+
+li {
+  list-style-type: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.container__fluid {
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.menu_bars_overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: #333;
+  z-index: 9;
+  opacity: 0.5;
+  transition: all 0.5s ease;
+}
+
+@font-face {
+  font-family: "SVN-Gotham";
+  src: url('font/SVN-Gotham\ Light.otf')
+}
+/***** End Reset CSS *****/
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

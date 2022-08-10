@@ -1,0 +1,29 @@
+/***** Start Header *****/
+.header {
+  .container__fluid {
+    border-bottom: 1px solid var(--black-color);
+    .header__logo {
+      width: 303px;
+      height: 176px;
+      border-right: 1px solid var(--black-color);
+      .header__logo-img {
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 66px;
+      }
+    }
+    .header__menu {
+      align-items: center;
+      margin-left: auto;
+      margin-right: 110px;
+      .header__menu-items {
+        margin-left: 66px;
+        white-space: nowrap;
+      }
+    }
+    .menu__bars {
+      display: none;
+    }
+  }
+}
+/***** End Header *****/
