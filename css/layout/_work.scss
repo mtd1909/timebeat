@@ -1,7 +1,6 @@
 .main__work {
   background-color: var(--black-color);
   padding-top: 120px;
-  padding-bottom: 120px;
   .container__fluid {
     position: relative;
     .circle {
@@ -69,6 +68,69 @@
       }
       .owl-item {
         left: -134px;
+      }
+      &:hover {
+        .owl-nav {
+          .owl-prev {
+            top: 50%;
+            opacity: 1;
+            visibility: visible;
+          }
+          .owl-next {
+            top: 50%;
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+      }
+      .owl-nav {
+        button {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          text-align: center;
+          position: relative;
+          overflow: hidden;
+          z-index: 1;
+          transition: all 0.4s ease-in-out;
+          span {
+            display: none;
+          }
+        }
+        .owl-prev {
+          position: absolute;
+          top: 60%;
+          left: 0;
+          transform: translateY(-50%);
+          border: 5px solid var(--white-color);
+          background-color: #E0ECE0;
+          opacity: 0;
+          visibility: hidden;
+          &:before {
+            content: "\f104";
+            font-family: "FontAwesome";
+          }
+          &:hover {
+            background-color: var(--orange-color);
+          }
+        }
+        .owl-next {
+          position: absolute;
+          top: 60%;
+          right: 0;
+          transform: translateY(-50%);
+          border: 5px solid var(--white-color);
+          background-color: #E0ECE0;
+          opacity: 0;
+          visibility: hidden;
+          &:before {
+            content: "\f105";
+            font-family: "FontAwesome";
+          }
+          &:hover {
+            background-color: var(--orange-color);
+          }
+        }
       }
     }
   }

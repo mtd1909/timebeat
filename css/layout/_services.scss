@@ -1,5 +1,6 @@
 .main__services {
   padding-bottom: 200px;
+  padding-top: 192px;
   .container__fluid {
     position: relative;
     .services__circle-left {
@@ -84,6 +85,21 @@
             border-radius: 5px;
             z-index: -1;
             opacity: 0.3;
+          }
+        }
+      }
+      .owl-item.active {
+        .services__slide {
+          .services__info {
+            animation-duration: 1s;
+            animation-fill-mode: both;
+            animation-name: fadeInRight;
+          }
+          .services__img-slide {
+            animation-duration: 1s;
+            animation-fill-mode: both;
+            animation-name: fadeInLeft;
+            animation-delay: 0.4s;
           }
         }
       }

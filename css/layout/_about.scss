@@ -1,16 +1,16 @@
 .main__about {
-  padding-bottom: 260px;
+  padding-bottom: 68px;
+  padding-top: 80px;
   .container__fluid {
     position: relative;
     .about__left-hand {
       position: absolute;
       top: -210px;
-      left: 12px;
     }
     .about__right-hand {
       position: absolute;
-      right: 12px;
       top: -22px;
+      right: 0;
     }
     .about__header {
       height: 80px;

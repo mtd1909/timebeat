@@ -19,10 +19,41 @@
       .header__menu-items {
         margin-left: 66px;
         white-space: nowrap;
+        .body__text {
+          transition: all 0.3s ease;
+          &.active {
+            color: var(--orange-color);
+          }
+          &:hover {
+            color: var(--orange-color);
+          }
+        }
       }
     }
     .menu__bars {
       display: none;
+    }
+  }
+  &.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 9999999;
+    animation: .95s ease-in-out 0s normal none 1 running fadeInDown;
+    transition: all .7s cubic-bezier(.645,.045,.355,1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    background-color: var(--white-color) ;
+    .container__fluid {
+      border: none;
+      .header__logo {
+        height: 80px;
+      }
+      .header__logo-img {
+        padding-top: 26px;
+      }
     }
   }
 }

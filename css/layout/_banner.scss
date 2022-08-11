@@ -1,7 +1,7 @@
   /***** Start Banner *****/
   .main__banner {
     position: relative;
-    padding-bottom: 314px;
+    padding-bottom: 234px;
     .banner__vector {
       position: absolute;
       top: 343px;
@@ -108,7 +108,13 @@
                 animation-duration: 1s;
                 animation-fill-mode: both;
                 animation-name: fadeInUp;
-                animation-delay: 0.2s;
+              }
+            }
+            .banner__img {
+              .banner__img-main {
+                animation-duration: 1s;
+                animation-fill-mode: both;
+                animation-name: fadeInLeft;
               }
             }
           }

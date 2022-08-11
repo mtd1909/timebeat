@@ -1,6 +1,9 @@
 .main__contact {
+  padding-top: 180px;
+  padding-bottom: 120px;
+  background-color: var(--black-color);
   .container__fluid {
-    padding: 0;
+    // padding: 0;
     .container {
       .contact__subtitle {
         position: relative;
@@ -27,11 +30,19 @@
         padding-top: 120px;
         .contact__logo {
           width: 25%;
+          animation-duration: 1s;
+          animation-fill-mode: both;
+          animation-name: fadeIn;
+          animation-delay: 0.4s;
           .contact__logo-img {
             margin-bottom: 20px;
           }
         }
         .contact__text {
+          animation-duration: 1s;
+          animation-fill-mode: both;
+          animation-name: fadeIn;
+          animation-delay: 0.5s;
           width: 25%;
           p {
             font-weight: 700;
@@ -63,8 +74,8 @@
                 background: transparent;
               }
               &:before {
-                border-right: 20px solid white;
-                border-top: 30px solid var(--black-color);
+                border-right: 15px solid white;
+                border-top: 20px solid var(--black-color);
                 content: "";
                 height: 0;
                 left: -1px;
@@ -73,8 +84,8 @@
                 top: -1px;
               }
               &:after {
-                border-right: 20px solid black;
-                border-top: 30px solid transparent;
+                border-right: 15px solid black;
+                border-top: 20px solid transparent;
                 content: "";
                 height: 0;
                 left: 0;
@@ -94,10 +105,11 @@
               textarea {
                 border: none;
                 background: transparent;
+                resize: none;
               }
               &:before {
-                border-right: 20px solid white;
-                border-top: 30px solid var(--black-color);
+                border-right: 15px solid white;
+                border-top: 20px solid var(--black-color);
                 content: "";
                 height: 0;
                 left: -1px;
@@ -106,8 +118,8 @@
                 top: -1px;
               }
               &:after {
-                border-right: 20px solid black;
-                border-top: 30px solid transparent;
+                border-right: 15px solid black;
+                border-top: 20px solid transparent;
                 content: "";
                 height: 0;
                 left: 0;
