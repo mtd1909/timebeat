@@ -40,6 +40,8 @@ $(document).ready(function() {
     dots: true,
     loop: true,
     items: 1,
+    responsive:{
+    }
   })
   
   $('.services__wrap').owlCarousel({

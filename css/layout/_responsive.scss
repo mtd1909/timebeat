@@ -474,8 +474,7 @@
               }
               .banner__img {
                 .banner__img-main {
-                    animation-name: fadeIn ;
-                    animation-delay: 0.3s;
+                    animation: unset;
                 }
               }
             }

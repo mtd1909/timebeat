@@ -1302,6 +1302,7 @@ input:-webkit-autofill:active {
   outline: none;
   color: var(--white-color);
   width: 100%;
+  line-height: 35px;
 }
 
 .main__contact .container__fluid .container .wrap__contact .contact__form .contact__form-left .contact__form-input:before {
@@ -1830,10 +1831,8 @@ footer .wrap__footer .container .footer__content .footer__left .footer__social .
             animation-delay: 0.3s;
   }
   .main .main__banner .container__fluid .banner__slide .owl-item.active .wrap__banner .banner__img .banner__img-main {
-    -webkit-animation-name: fadeIn;
-            animation-name: fadeIn;
-    -webkit-animation-delay: 0.3s;
-            animation-delay: 0.3s;
+    -webkit-animation: unset;
+            animation: unset;
   }
   .main .main__banner .container__fluid .banner__slide .wrap__banner {
     -webkit-box-orient: vertical;
