@@ -93,6 +93,10 @@ li {
   margin: 0 auto;
 }
 
+.header-sticky {
+  padding-top: 177px;
+}
+
 .menu_bars_overlay {
   position: fixed;
   top: 0;
@@ -1272,6 +1276,8 @@ li {
 .main__contact .container__fluid .container .wrap__contact .contact__form .contact__form-left .contact__form-input input {
   border: none;
   background: transparent;
+  outline: none;
+  color: var(--white-color);
 }
 
 .main__contact .container__fluid .container .wrap__contact .contact__form .contact__form-left .contact__form-input:before {
@@ -1311,6 +1317,8 @@ li {
   border: none;
   background: transparent;
   resize: none;
+  outline: none;
+  color: var(--white-color);
 }
 
 .main__contact .container__fluid .container .wrap__contact .contact__form .contact__form-right .contact__form-input:before {
@@ -1697,6 +1705,9 @@ footer .wrap__footer .container .footer__content .footer__left .footer__social .
     border: none;
     width: auto;
   }
+  .header .container__fluid .header__logo .header__logo-img {
+    padding-top: 25px;
+  }
   .header .container__fluid .header__menu {
     right: -80%;
     height: 100vh;
@@ -1777,6 +1788,22 @@ footer .wrap__footer .container .footer__content .footer__left .footer__social .
     text-align: center;
     top: 30px;
     white-space: nowrap;
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+  }
+  .main .main__banner .container__fluid .banner__slide .owl-item.active .wrap__banner .banner__content .banner__content-text {
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+  }
+  .main .main__banner .container__fluid .banner__slide .owl-item.active .wrap__banner .banner__img .banner__img-main {
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
   }
   .main .main__banner .container__fluid .banner__slide .wrap__banner {
     -webkit-box-orient: vertical;
@@ -1847,6 +1874,24 @@ footer .wrap__footer .container .footer__content .footer__left .footer__social .
     width: 100%;
     margin: 0;
     margin-top: 20px;
+  }
+  .main .main__services .container__fluid .services__wrap .owl-item.active .services__slide .services__info {
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+  }
+  .main .main__services .container__fluid .services__wrap .owl-item.active .services__slide .services__img-slide {
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+    -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s;
   }
   .main .main__services .container__fluid .services__wrap .owl-nav {
     display: none;
@@ -2072,7 +2117,7 @@ footer .wrap__footer .container .footer__content .footer__left .footer__social .
     display: none;
   }
   .main .main__banner .container__fluid .banner__intro {
-    top: 10px;
+    top: 25px;
   }
   .main .main__banner .container__fluid .banner__intro .banner__intro-header {
     font-size: 22px;
@@ -2085,7 +2130,7 @@ footer .wrap__footer .container .footer__content .footer__left .footer__social .
     font-size: 22px;
   }
   .main .main__banner .container__fluid .banner__slide .wrap__banner .banner__content .banner__content-text {
-    padding-top: 150px;
+    padding-top: 180px;
     font-size: 14px;
   }
   .main .main__banner .container__fluid .banner__slide .wrap__banner .banner__img {

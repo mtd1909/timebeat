@@ -1,71 +1,35 @@
 $(document).ready(function() {
-  let header = document.querySelector(".header");
-  window.addEventListener("scroll", () => {
-    header.classList.toggle("sticky", window.scrollY > 0);
+  let header = document.querySelector('.header');
+  let body = document.querySelector('body');
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('sticky', window.scrollY > 177);
+    body.classList.toggle('header-sticky', window.scrollY > 177)
   });
-
-  // function findTop(element) {
-  //   var rec = document.querySelector(element).getBoundingClientRect();
-  //   return rec.top;
-  // }
-  // var isShow = true
-  
-  // $(document).scroll(function() {
-  //   var y = $(this).scrollTop();
-  //   if (y > findTop('#about') && isShow && y < findTop('#services' )) {
-  //     $( '#1' ).removeClass( 'active' );
-  //     $( '#2' ).addClass( 'active' );
-  //     $( '#3' ).removeClass( 'active' );
-  //     $( '#4' ).removeClass( 'active' );
-  //     $( '#5' ).removeClass( 'active' );
-  //   }
-  //   else if (y > findTop('#services') && isShow && y <= findTop('#works')) {
-  //     $( '#2' ).removeClass( 'active' );
-  //     $( '#3' ).addClass( 'active' );
-  //     $( '#1' ).removeClass( 'active' );
-  //     $( '#4' ).removeClass( 'active' );
-  //     $( '#5' ).removeClass( 'active' );
-  //   }
-  //   else if (y > findTop('#works') && isShow && y <= findTop('#contact')) {
-  //     $( '#3' ).removeClass( 'active' );
-  //     $( '#4' ).addClass( 'active' );
-  //     $( '#1' ).removeClass( 'active' );
-  //     $( '#2' ).removeClass( 'active' );
-  //     $( '#5' ).removeClass( 'active' );
-  //   }
-  //   else if (y > findTop('#contact') && isShow) {
-  //     $( '#4' ).removeClass( 'active' );
-  //     $( '#5' ).addClass( 'active' );
-  //     $( '#1' ).removeClass( 'active' );
-  //     $( '#2' ).removeClass( 'active' );
-  //     $( '#3' ).removeClass( 'active' );
-  //   }
-  // });
 
   // Vanilla Menu //
   function functionScroll() {
-    var section = document.querySelectorAll(".section"),
+    var section = document.querySelectorAll('.section'),
       sections = {},
       i = 0;
     Array.prototype.forEach.call(section, function (e) {
       sections[e.id] = e.offsetTop;
     });
-    let header = document.querySelector(".header");
+    let header = document.querySelector('.header');
     let height = header.offsetHeight;
     for (i in sections) {
       if (sections[i] <= window.pageYOffset + height) {
-        const active = document.querySelector(".active");
+        const active = document.querySelector('.active');
         if (active) {
-          active.classList.remove("active");
+          active.classList.remove('active');
         }
-        if (document.querySelector("a[href*=" + i + "]")) {
-          document.querySelector("a[href*=" + i + "]").classList.add("active");
+        if (document.querySelector('a[href*=' + i + ']')) {
+          document.querySelector('a[href*=' + i + ']').classList.add('active');
         }
       }
     }
   }
-  window.addEventListener("scroll", functionScroll);
-  window.addEventListener("resize", functionScroll);
+  window.addEventListener('scroll', functionScroll);
+  window.addEventListener('resize', functionScroll);
   
   AOS.init({
     duration: 1500,
@@ -82,14 +46,17 @@ $(document).ready(function() {
     loop: true,
     nav: true,
     items: 1,
-    animateOut: 'fadeOut',
-    animateIn: 'fadeIn',
     autoplay: true,
     autoplayTimeout: 4000,
     smartSpeed: 1300,
+    autoplayHoverPause: true,
     responsive:{
       0: {
         margin: 30,
+      },
+      768: {
+        animateOut: 'fadeOut',
+        animateIn: 'fadeIn',
       },
       1440: {
         margin: 0,

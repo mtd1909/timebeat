@@ -72,6 +72,8 @@
               input {
                 border: none;
                 background: transparent;
+                outline: none;
+                color: var(--white-color);
               }
               &:before {
                 border-right: 15px solid white;
@@ -106,6 +108,8 @@
                 border: none;
                 background: transparent;
                 resize: none;
+                outline: none;
+                color: var(--white-color);
               }
               &:before {
                 border-right: 15px solid white;
