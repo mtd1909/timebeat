@@ -57,6 +57,8 @@
         .work__slide-img {
           img {
             border-radius: 5px;
+            filter: brightness(70%);
+            transition: all 0.4s ease;
           }
         }
         .work__slide-name {
@@ -64,6 +66,17 @@
           opacity: 0.6;
           text-align: center;
           margin-top: 30px;
+          transition: all 0.4s ease;
+        }
+        &:hover {
+          .work__slide-img {
+            img {
+              filter: brightness(100%);
+            }
+          }
+          .work__slide-name {
+            opacity: 1;
+          }
         }
       }
       .owl-item {

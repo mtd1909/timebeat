@@ -881,6 +881,10 @@ li {
 
 .main__work .container__fluid .work__wrap .work__slide .work__slide-img img {
   border-radius: 5px;
+  -webkit-filter: brightness(70%);
+          filter: brightness(70%);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .main__work .container__fluid .work__wrap .work__slide .work__slide-name {
@@ -888,6 +892,17 @@ li {
   opacity: 0.6;
   text-align: center;
   margin-top: 30px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.main__work .container__fluid .work__wrap .work__slide:hover .work__slide-img img {
+  -webkit-filter: brightness(100%);
+          filter: brightness(100%);
+}
+
+.main__work .container__fluid .work__wrap .work__slide:hover .work__slide-name {
+  opacity: 1;
 }
 
 .main__work .container__fluid .work__wrap .owl-item {
