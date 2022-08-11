@@ -110,6 +110,13 @@ li {
   transition: all 0.5s ease;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-background-color: var(--black-color) !important;
+}
+
 @font-face {
   font-family: "SVN-Gotham";
   src: url("font/SVN-Gotham Light.otf");
@@ -1097,7 +1104,7 @@ li {
 }
 
 .main__partners .container__fluid .container .partners__content .entertainment .entertainment__img {
-  width: calc((100% - 140px) / 7);
+  width: calc((100% - 180px) / 9);
   margin: auto 10px;
 }
 
@@ -1283,9 +1290,10 @@ li {
 .main__contact .container__fluid .container .wrap__contact .contact__form .contact__form-left .contact__form-input {
   width: 250px;
   border: 1px solid var(--white-color);
-  padding: 4px 10px 4px 30px;
+  padding: 0 10px 0 30px;
   margin-bottom: 10px;
   position: relative;
+  height: 35px;
 }
 
 .main__contact .container__fluid .container .wrap__contact .contact__form .contact__form-left .contact__form-input input {
@@ -1293,6 +1301,7 @@ li {
   background: transparent;
   outline: none;
   color: var(--white-color);
+  width: 100%;
 }
 
 .main__contact .container__fluid .container .wrap__contact .contact__form .contact__form-left .contact__form-input:before {
@@ -1713,6 +1722,12 @@ footer .wrap__footer .container .footer__content .footer__left .footer__social .
 }
 
 @media screen and (max-width: 768px) {
+  .header-sticky {
+    padding-top: 101px;
+  }
+  .header.sticky .container__fluid .header__logo .header__logo-img {
+    padding-top: 25px;
+  }
   .header .container__fluid {
     position: relative;
   }
@@ -1721,7 +1736,7 @@ footer .wrap__footer .container .footer__content .footer__left .footer__social .
     width: auto;
   }
   .header .container__fluid .header__logo .header__logo-img {
-    padding-top: 25px;
+    padding-top: 40px;
   }
   .header .container__fluid .header__menu {
     right: -80%;

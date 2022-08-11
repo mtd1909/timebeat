@@ -364,14 +364,26 @@
 }
 
 @media screen and (max-width: 768px) {
+  .header-sticky {
+    padding-top: 101px;
+  }
   .header {
+    &.sticky {
+      .container__fluid {
+        .header__logo {
+          .header__logo-img {
+            padding-top: 25px;
+          }
+        }
+      }
+    }
     .container__fluid {
       position: relative;
       .header__logo {
         border: none;
         width: auto;
         .header__logo-img {
-          padding-top: 25px;
+          padding-top: 40px;
         }
       }
       .header__menu {

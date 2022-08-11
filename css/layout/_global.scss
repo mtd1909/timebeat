@@ -105,6 +105,14 @@ li {
   transition: all 0.5s ease;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-background-color: var(--black-color) !important;
+}
+
+
 @font-face {
   font-family: "SVN-Gotham";
   src: url('font/SVN-Gotham\ Light.otf')
