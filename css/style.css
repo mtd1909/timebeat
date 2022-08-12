@@ -114,7 +114,7 @@ input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
-  -webkit-background-color: var(--black-color) !important;
+  -webkit-box-shadow: 0 0 0 30px var(--black-color) inset !important;
 }
 
 @font-face {
@@ -478,8 +478,8 @@ input:-webkit-autofill:active {
           animation-duration: 1s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
-  -webkit-animation-name: fadeInLeft;
-          animation-name: fadeInLeft;
+  -webkit-animation-name: fadeInUp;
+          animation-name: fadeInUp;
 }
 
 .main__banner .container__fluid .banner__slide .owl-dots {

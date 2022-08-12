@@ -41,10 +41,10 @@ $(document).ready(function() {
     loop: true,
     items: 1,
     responsive:{
-      768: {
-        animateOut: 'fadeOut',
-        animateIn: 'fadeIn',
-      }
+      // 768: {
+      //   animateOut: 'fadeOut',
+      //   animateIn: 'fadeIn',
+      // }
     }
   })
   

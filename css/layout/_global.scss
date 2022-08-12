@@ -108,9 +108,11 @@ li {
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
 input:-webkit-autofill:focus, 
-input:-webkit-autofill:active{
-    -webkit-background-color: var(--black-color) !important;
+input:-webkit-autofill:active
+{
+ -webkit-box-shadow: 0 0 0 30px var(--black-color) inset !important;
 }
+
 
 
 @font-face {
