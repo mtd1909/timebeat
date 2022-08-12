@@ -110,13 +110,6 @@ li {
   transition: all 0.5s ease;
 }
 
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active {
-  -webkit-box-shadow: 0 0 0 30px var(--black-color) inset !important;
-}
-
 @font-face {
   font-family: "SVN-Gotham";
   src: url("font/SVN-Gotham Light.otf");
@@ -347,6 +340,7 @@ input:-webkit-autofill:active {
 .main__banner {
   position: relative;
   padding-bottom: 234px;
+  margin-top: -1px;
 }
 
 .main__banner .banner__vector {
@@ -1286,7 +1280,7 @@ input:-webkit-autofill:active {
   font-weight: 700;
   font-size: 12px;
   line-height: 18px;
-  color: var(--white-color);
+  color: #b2b2b2;
 }
 
 .main__contact .container__fluid .container .wrap__contact .contact__form :-ms-input-placeholder {
@@ -1294,7 +1288,7 @@ input:-webkit-autofill:active {
   font-weight: 700;
   font-size: 12px;
   line-height: 18px;
-  color: var(--white-color);
+  color: #b2b2b2;
 }
 
 .main__contact .container__fluid .container .wrap__contact .contact__form ::-ms-input-placeholder {
@@ -1302,7 +1296,7 @@ input:-webkit-autofill:active {
   font-weight: 700;
   font-size: 12px;
   line-height: 18px;
-  color: var(--white-color);
+  color: #b2b2b2;
 }
 
 .main__contact .container__fluid .container .wrap__contact .contact__form ::placeholder {
@@ -1310,7 +1304,7 @@ input:-webkit-autofill:active {
   font-weight: 700;
   font-size: 12px;
   line-height: 18px;
-  color: var(--white-color);
+  color: #b2b2b2;
 }
 
 .main__contact .container__fluid .container .wrap__contact .contact__form .contact__form-left {
@@ -1319,7 +1313,7 @@ input:-webkit-autofill:active {
 
 .main__contact .container__fluid .container .wrap__contact .contact__form .contact__form-left .contact__form-input {
   width: 250px;
-  border: 1px solid var(--white-color);
+  border: 1px solid #d9d9d9;
   padding: 0 10px 0 30px;
   margin-bottom: 10px;
   position: relative;
@@ -1336,7 +1330,7 @@ input:-webkit-autofill:active {
 }
 
 .main__contact .container__fluid .container .wrap__contact .contact__form .contact__form-left .contact__form-input:before {
-  border-right: 15px solid white;
+  border-right: 15px solid #d9d9d9;
   border-top: 20px solid var(--black-color);
   content: "";
   height: 0;
@@ -1362,7 +1356,7 @@ input:-webkit-autofill:active {
 }
 
 .main__contact .container__fluid .container .wrap__contact .contact__form .contact__form-right .contact__form-input {
-  border: 1px solid var(--white-color);
+  border: 1px solid #d9d9d9;
   padding: 10px 10px 10px 30px;
   margin-bottom: 10px;
   position: relative;
@@ -1377,7 +1371,7 @@ input:-webkit-autofill:active {
 }
 
 .main__contact .container__fluid .container .wrap__contact .contact__form .contact__form-right .contact__form-input:before {
-  border-right: 15px solid white;
+  border-right: 15px solid #d9d9d9;
   border-top: 20px solid var(--black-color);
   content: "";
   height: 0;
