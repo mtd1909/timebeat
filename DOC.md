@@ -1,0 +1,1 @@
+aws s3 sync --profile timebird . s3://timebeat.vn
