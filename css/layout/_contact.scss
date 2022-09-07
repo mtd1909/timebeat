@@ -66,10 +66,10 @@
             .contact__form-input {
               width: 250px;
               border: 1px solid #d9d9d9; 
-              padding: 0 10px 0 30px;
+              padding: 0 10px 0 25px;
               margin-bottom: 10px;
               position: relative;
-              height: 35px;
+              height: 40px;
               input {
                 border: none;
                 background: transparent;
@@ -140,6 +140,11 @@
               bottom: 4px;
               right: 4px;
               padding: 4px 12px;
+              cursor: pointer;
+              &[type='submit'] {
+                font-family: "Space Mono";
+                font-weight: 500;
+              }
             }
           }
         }

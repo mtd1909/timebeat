@@ -159,4 +159,19 @@ $(document).ready(function() {
     }, 1000 );
     e.preventDefault();
   });
+
 })
+
+function sendEmail() {
+  var templateParams = {
+    subject: document.getElementById('subject').value,
+    name: document.getElementById('name').value,
+    email: document.getElementById('email').value,
+    phone: document.getElementById('phone').value,
+    company: document.getElementById('company').value,
+    message: document.getElementById('message').value,
+  };
+  
+  emailjs.send('service_f2xjkhm', 'template_qkwpakn', templateParams)
+
+}

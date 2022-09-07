@@ -45,20 +45,44 @@
             margin: 10px 0 20px 58px;
             color: var(--not-black);
             line-height: 40px;
+            font-family: "SVN-Gotham";
           }
           .services__text {
             font-size: 20px;
             margin-left: 58px;
             color: var(--grey-color);
+            font-family: "SVN-Gotham";
+            &.add {
+              &:before {
+                content: "\2b";
+                font-family: "FontAwesome";
+                font-size: 12px;
+                margin-right: 6px;
+              }
+            }
           }
           ul {
             margin-left: 58px;
             margin-top: 30px;
+            &.add {
+              margin-left: 120px;
+              margin-top: 10px;
+              margin-bottom: 10px;
+              li {
+                margin-bottom: 6px;
+                font-size: 16px;
+                &:before {
+                  content:"\f111";
+                  font-size: 8px;
+                }
+              }
+            }
             li {
               font-size: 20px;
               display: flex;
               align-items: center;
               color: var(--grey-color);
+              font-family: "SVN-Gotham";
               &:before {
                 content: "\2b";
                 font-family: "FontAwesome";
@@ -76,8 +100,8 @@
           position: relative;
           &:before {
             content: "";
-            width: 491px;
-            height: 271px;
+            width: 98%;
+            height: 100%;
             border: 0.1px solid var(--black-color);
             position: absolute;
             right: -20px;
@@ -100,6 +124,9 @@
             animation-fill-mode: both;
             animation-name: fadeInLeft;
             animation-delay: 0.4s;
+            img {
+              border-radius: 4px;
+            }
           }
         }
       }

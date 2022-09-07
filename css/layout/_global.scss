@@ -59,7 +59,6 @@ h3 {
 
 img {
   max-width: 100%;
-  height: auto;
   display: block;
 }
 
@@ -103,6 +102,11 @@ li {
   z-index: 9;
   opacity: 0.5;
   transition: all 0.5s ease;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #000 inset !important;
+  -webkit-text-fill-color: white !important;
 }
 
 @font-face {

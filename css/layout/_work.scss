@@ -57,12 +57,18 @@
     }
     .work__wrap {
       margin-top: 280px;
+      max-width: 1440px;
+      margin-left: auto;
+      margin-right: auto;
       .work__slide {
         .work__slide-img {
+          height: 500px;
           img {
             border-radius: 5px;
             filter: brightness(70%);
+            object-fit: cover;
             transition: all 0.4s ease;
+            height: 100%;
           }
         }
         .work__slide-name {
@@ -116,7 +122,7 @@
         }
         .owl-prev {
           position: absolute;
-          top: 60%;
+          top: 50%;
           left: 0;
           transform: translateY(-50%);
           border: 5px solid var(--white-color);
@@ -133,7 +139,7 @@
         }
         .owl-next {
           position: absolute;
-          top: 60%;
+          top: 50%;
           right: 0;
           transform: translateY(-50%);
           border: 5px solid var(--white-color);

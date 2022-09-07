@@ -73,10 +73,10 @@
             width: 45%;
             .banner__content-text {
               max-width: 300px;
-              line-height: 21px;
-              letter-spacing: -1px;
+              line-height: 28px;
               padding-top: 390px;
               margin-left: 194px;
+              font-family: "SVN-Gotham";
             }
           }
           .banner__img {
@@ -84,6 +84,9 @@
             position: relative;
             .banner__img-main {
               height: 569px;
+              object-fit: cover;
+              margin-top: 1px;
+              box-shadow: rgba(0, 0, 0, 0.08);
             }
             .banner__enter-icon {
               width: 33px;
@@ -95,7 +98,7 @@
             span {
               position: absolute;
               right: 0px;
-              bottom: -10px;
+              bottom: 4px;
               font-size: 44px;
               font-weight: 700;
               color: var(--white-color);
@@ -125,7 +128,7 @@
         }
         .owl-nav {
           margin-top: 70px;
-          right: 356px;
+          right: 25%;
           position: absolute;
           button {
             width: 30px;
