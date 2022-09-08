@@ -40,6 +40,7 @@ $(document).ready(function() {
     dots: true,
     loop: true,
     items: 1,
+    lazyLoad: true,
     responsive:{
       768: {
         animateOut: 'fadeOut',
@@ -55,6 +56,7 @@ $(document).ready(function() {
     autoplay: true,
     autoplayTimeout: 4000,
     smartSpeed: 1300,
+    lazyLoad: true,
     autoplayHoverPause: true,
     responsive:{
       0: {
@@ -77,6 +79,7 @@ $(document).ready(function() {
     items: 5,
     margin: 20,
     autoplay: true,
+    lazyLoad: true,
     autoplayTimeout: 2000,
     autoplayHoverPause: true,
     responsive:{
