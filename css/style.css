@@ -2010,4 +2010,12 @@ footer .wrap__footer .container .footer__content .footer__left .footer__social .
   .container__fluid {
     max-width: 100%;
   }
+}
+@media screen and (min-width: 1599px) {
+  .main .main__banner .container__fluid .banner__intro {
+    left: 160px;
+  }
+  .main .main__banner .container__fluid .banner__slide .wrap__banner .banner__content .banner__content-text {
+    margin-left: 260px;
+  }
 }/*# sourceMappingURL=style.css.map */
