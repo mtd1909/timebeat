@@ -336,9 +336,8 @@ input:-webkit-autofill {
   position: relative;
 }
 .main__banner .container__fluid .banner__intro {
-  position: absolute;
-  top: 170px;
-  left: 82px;
+  margin-top: 170px;
+  margin-left: 82px;
 }
 .main__banner .container__fluid .banner__intro .banner__intro-header {
   font-weight: 400;
@@ -357,6 +356,7 @@ input:-webkit-autofill {
   font-size: 32px;
   line-height: 40px;
   margin-left: 28px;
+  white-space: inherit;
 }
 .main__banner .container__fluid .banner__slide .wrap__banner .banner__content {
   width: 45%;
@@ -364,9 +364,9 @@ input:-webkit-autofill {
 .main__banner .container__fluid .banner__slide .wrap__banner .banner__content .banner__content-text {
   max-width: 300px;
   line-height: 28px;
-  padding-top: 390px;
   margin-left: 194px;
   font-family: "SVN-Gotham";
+  margin-top: 20px;
 }
 .main__banner .container__fluid .banner__slide .wrap__banner .banner__img {
   width: 55%;
@@ -394,21 +394,29 @@ input:-webkit-autofill {
   font-weight: 700;
   color: var(--white-color);
 }
+.main__banner .container__fluid .banner__slide .owl-item.active .wrap__banner .banner__content .banner__intro {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-name: fadeInLeft;
+          animation-name: fadeInLeft;
+}
 .main__banner .container__fluid .banner__slide .owl-item.active .wrap__banner .banner__content .banner__content-text {
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
-  -webkit-animation-name: fadeInUp;
-          animation-name: fadeInUp;
+  -webkit-animation-name: fadeInLeft;
+          animation-name: fadeInLeft;
 }
 .main__banner .container__fluid .banner__slide .owl-item.active .wrap__banner .banner__img .banner__img-main {
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
-  -webkit-animation-name: fadeInUp;
-          animation-name: fadeInUp;
+  -webkit-animation-name: fadeInLeft;
+          animation-name: fadeInLeft;
 }
 .main__banner .container__fluid .banner__slide .owl-dots {
   display: none;
@@ -483,8 +491,8 @@ input:-webkit-autofill {
   text-align: center;
   background: var(--white-color);
   line-height: 74px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 48px;
+  padding-right: 48px;
 }
 .main__about .container__fluid .about__header .about__title:before {
   content: " ";
@@ -494,7 +502,7 @@ input:-webkit-autofill {
   position: absolute;
   border-radius: 50%;
   top: 50%;
-  left: 5px;
+  left: 12px;
   transform: translateY(-50%);
 }
 .main__about .container__fluid .about__header .about__title:after {
@@ -505,7 +513,7 @@ input:-webkit-autofill {
   position: absolute;
   border-radius: 50%;
   top: 50%;
-  right: 5px;
+  right: 12px;
   transform: translateY(-50%);
 }
 .main__about .container__fluid .about__text {
@@ -1272,12 +1280,20 @@ footer .wrap__footer .container .footer__content .footer__left .footer__social .
 
 @media screen and (max-width: 2559px) {
   .main .main__banner .container__fluid .banner__slide .wrap__banner .banner__img .banner__img-main {
-    height: 710px;
+    height: 680px;
+  }
+}
+@media screen and (max-width: 1921px) {
+  .main .main__banner .container__fluid .banner__slide .wrap__banner .banner__img .banner__img-main {
+    height: 590px;
   }
 }
 @media screen and (max-width: 1599px) {
   .main .main__banner .container__fluid .banner__slide .wrap__banner .banner__img .banner__img-main {
     height: 560px;
+  }
+  .main .main__banner .container__fluid .banner__slide .owl-nav {
+    margin-top: 10px;
   }
 }
 @media screen and (max-width: 1439px) {
@@ -1343,8 +1359,8 @@ footer .wrap__footer .container .footer__content .footer__left .footer__social .
     top: 670px;
   }
   .main .main__banner .container__fluid .banner__intro {
-    left: 20px;
-    top: 60px;
+    margin-left: 0;
+    margin-top: 60px;
   }
   .main .main__banner .container__fluid .banner__intro .banner__intro-subtitle {
     margin-left: 0;
@@ -1355,8 +1371,8 @@ footer .wrap__footer .container .footer__content .footer__left .footer__social .
   .main .main__banner .container__fluid .banner__slide .wrap__banner .banner__content .banner__content-text {
     margin-left: 0;
     max-width: none;
-    padding-top: 250px;
     margin-right: 30px;
+    margin-top: 30px;
   }
   .main .main__banner .container__fluid .banner__slide .wrap__banner .banner__img .banner__img-main {
     height: 450px;
@@ -1435,7 +1451,7 @@ footer .wrap__footer .container .footer__content .footer__left .footer__social .
     font-size: 36px;
   }
   .main .main__banner .container__fluid .banner__intro {
-    left: 12px;
+    margin-left: 0;
   }
   .main .main__banner .container__fluid .banner__intro .banner__intro-header {
     font-size: 26px;
@@ -1445,6 +1461,7 @@ footer .wrap__footer .container .footer__content .footer__left .footer__social .
   }
   .main .main__banner .container__fluid .banner__intro .banner__intro-subtitle {
     font-size: 26px;
+    margin-top: 0;
   }
   .main .main__banner .container__fluid .banner__slide {
     margin: 0;
@@ -1619,21 +1636,21 @@ footer .wrap__footer .container .footer__content .footer__left .footer__social .
     right: 50px;
   }
   .main .main__banner .container__fluid .banner__intro {
-    left: 50%;
-    transform: translateX(-50%);
     text-align: center;
-    top: 30px;
+    margin-top: 30px;
     white-space: nowrap;
     -webkit-animation-name: fadeIn;
             animation-name: fadeIn;
     -webkit-animation-delay: 0.3s;
             animation-delay: 0.3s;
+    width: 100%;
   }
   .main .main__banner .container__fluid .banner__slide .owl-item.active .wrap__banner .banner__content .banner__content-text {
     -webkit-animation-name: fadeIn;
             animation-name: fadeIn;
     -webkit-animation-delay: 0.3s;
             animation-delay: 0.3s;
+    margin-top: 20px;
   }
   .main .main__banner .container__fluid .banner__slide .owl-item.active .wrap__banner .banner__img .banner__img-main {
     -webkit-animation: unset;
@@ -1646,7 +1663,6 @@ footer .wrap__footer .container .footer__content .footer__left .footer__social .
     width: 100%;
   }
   .main .main__banner .container__fluid .banner__slide .wrap__banner .banner__content .banner__content-text {
-    padding-top: 210px;
     margin-right: 0;
     text-align: center;
   }
@@ -1745,6 +1761,9 @@ footer .wrap__footer .container .footer__content .footer__left .footer__social .
   }
   .main .main__work .container__fluid .work__wrap .owl-item {
     left: 0;
+  }
+  .main .main__work .container__fluid .work__wrap .owl-nav {
+    display: none;
   }
   .main .main__work .container__fluid .main__partners {
     padding-bottom: 130px;
@@ -1933,7 +1952,7 @@ footer .wrap__footer .container .footer__content .footer__left .footer__social .
     display: none;
   }
   .main .main__banner .container__fluid .banner__intro {
-    top: 25px;
+    margin-top: 25px;
   }
   .main .main__banner .container__fluid .banner__intro .banner__intro-header {
     font-size: 22px;
@@ -1946,8 +1965,8 @@ footer .wrap__footer .container .footer__content .footer__left .footer__social .
     font-size: 22px;
   }
   .main .main__banner .container__fluid .banner__slide .wrap__banner .banner__content .banner__content-text {
-    padding-top: 180px;
     font-size: 14px;
+    margin-top: 10px !important;
   }
   .main .main__banner .container__fluid .banner__slide .wrap__banner .banner__img {
     margin-top: 20px;
@@ -2013,7 +2032,7 @@ footer .wrap__footer .container .footer__content .footer__left .footer__social .
 }
 @media screen and (min-width: 1599px) {
   .main .main__banner .container__fluid .banner__intro {
-    left: 160px;
+    margin-left: 160px;
   }
   .main .main__banner .container__fluid .banner__slide .wrap__banner .banner__content .banner__content-text {
     margin-left: 260px;

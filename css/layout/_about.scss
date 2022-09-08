@@ -34,8 +34,8 @@
         text-align: center;
         background: var(--white-color);
         line-height: 74px;
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-left: 48px;
+        padding-right: 48px;
         &:before {
           content: " ";
           width: 11px;
@@ -44,7 +44,7 @@
           position: absolute;
           border-radius: 50%;
           top: 50%;
-          left: 5px;
+          left: 12px;
           transform: translateY(-50%);
         }
         &:after {
@@ -55,7 +55,7 @@
           position: absolute;
           border-radius: 50%;
           top: 50%;
-          right: 5px;
+          right: 12px;
           transform: translateY(-50%);
         }
       }
