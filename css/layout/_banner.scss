@@ -42,35 +42,45 @@
         position: absolute;
       }
     }
+    .banner__intro {
+      margin-top: 170px;
+      margin-left: 82px;
+      position: absolute;
+      .banner__intro-header {
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 47px;
+      }
+      .banner__intro-title {
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 80px;
+        color: var(--orange-color);
+        text-transform: uppercase;
+      }
+    }
     .container__fluid {
       position: relative;
-      .banner__intro {
-        margin-top: 170px;
-        margin-left: 82px;
-        .banner__intro-header {
-          font-weight: 400;
-          font-size: 32px;
-          line-height: 47px;
-        }
-        .banner__intro-title {
-          font-weight: 700;
-          font-size: 64px;
-          line-height: 80px;
-          color: var(--orange-color);
-          text-transform: uppercase;
-        }
-        .banner__intro-subtitle {
-          font-weight: 700;
-          font-size: 32px;
-          line-height: 40px;
-          margin-left: 28px;
-          white-space: inherit;
-        }
-      }
       .banner__slide {
         .wrap__banner {
           .banner__content {
             width: 45%;
+            .banner__content-subtitle {
+              font-weight: 700;
+              font-size: 32px;
+              line-height: 30px;
+              margin-left: 170px;
+              white-space: inherit;
+              padding-top: 300px;
+              display: flex;
+              &:before {
+                content: "\f111";
+                font-size: 8px;
+                font-family: "FontAwesome";
+                margin-right: 10px;
+                align-items: center;
+              }
+            }
             .banner__content-text {
               max-width: 300px;
               line-height: 28px;

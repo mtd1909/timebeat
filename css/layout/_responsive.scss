@@ -30,6 +30,13 @@
         }
       }
     }
+    .main__work {
+      .container__fluid {
+        .circle {
+          left: 39%;
+        }
+      }
+    }
   }
 }
 
@@ -39,6 +46,11 @@
       .container__fluid {
         .banner__slide {
           .wrap__banner {
+            .banner__content {
+              .banner__content-subtitle {
+                margin-left: 80px;
+              }
+            }
             .banner__img {
               .banner__img-main {
                 height: 560px;
@@ -51,9 +63,16 @@
         }
       }
     }
+    .main__work {
+      .container__fluid {
+        .circle {
+          left: 37%;
+        }
+      }
+    }
   }
 }
-@media screen and (max-width: 1439px) {
+@media screen and (max-width: 1440px) {
   .main {
     .main__banner {
       .container__fluid {
@@ -89,9 +108,7 @@
           .services__slide {
             padding: 0 100px;
             .services__img-slide {
-              &:before {
-                width: 489px;
-              }
+              height: 360px;
             }
           }
         }
@@ -99,6 +116,9 @@
     }
     .main__work {
       .container__fluid {
+        .circle {
+          left: 35%;
+        }
         .work__title {
           &:before {
             transform: scale(7.8) translateX(-4%);
@@ -159,16 +179,17 @@
           }
         }
         .banner__intro {
-          margin-left: 0;
+          margin-left: 40px;
           margin-top: 60px;
-          .banner__intro-subtitle {
-            margin-left: 0;
-          }
         }
         .banner__slide {
           margin: 0 12px;
           .wrap__banner {
             .banner__content {
+              .banner__content-subtitle {
+                margin-left: 20px;
+                padding-top: 200px;
+              }
               .banner__content-text {
                 margin-left: 0;
                 max-width: none;
@@ -218,6 +239,9 @@
         .services__wrap {
           .services__slide {
             padding: 0 20px;
+            .services__img-slide {
+              height: 260px;
+            }
           }
           .owl-dots {
             right: 230px;
@@ -284,7 +308,6 @@
   }
 }
 
-
 @media screen and (max-width: 992px) {
   h2 {
     font-size: 36px;
@@ -300,14 +323,16 @@
           .banner__intro-title {
             font-size: 48px;
           }
-          .banner__intro-subtitle {
-            font-size: 26px;
-            margin-top: 0;
-          }
         }
         .banner__slide {
           margin: 0;
           .wrap__banner {
+            .banner__content {
+              .banner__content-subtitle {
+                margin-left: 0;
+                font-size: 26px;
+              }
+            }
             .banner__img {
               .banner__enter-icon {
                 width: 27px;
@@ -522,6 +547,11 @@
           .owl-item.active {
             .wrap__banner {
               .banner__content {
+                .banner__content-subtitle {
+                  justify-content: center;
+                  padding-top: 170px;
+                  line-height: 21px;
+                }
                 .banner__content-text {
                   animation-name: fadeIn ;
                   animation-delay: 0.3s;
@@ -603,6 +633,7 @@
               width: 100%;
               margin: 0;
               margin-top: 20px;
+              height: 419px;
             }
           }
           .owl-item.active {
@@ -781,6 +812,9 @@
         }
         .services__wrap {
           .services__slide {
+            .services__img-slide {
+              height: 305px;
+            }
             .services__info {
               .services__subtitle {
                 font-size: 32px;
@@ -941,13 +975,14 @@
             font-size: 42px;
             line-height: 50px;
           }
-          .banner__intro-subtitle {
-            font-size: 22px;
-          }
         }
         .banner__slide {
           .wrap__banner {
             .banner__content {
+              .banner__content-subtitle {
+                font-size: 22px;
+                padding-top: 140px !important;
+              }
               .banner__content-text {
                 font-size: 14px;
                 margin-top: 10px !important;
@@ -997,6 +1032,9 @@
         }
         .services__wrap {
           .services__slide {
+            .services__img-slide {
+              height: 256px;
+            }
             .services__info {
               .services__subtitle {
                 font-size: 24px;
@@ -1062,6 +1100,21 @@
   }
 }
 
+@media screen and (max-width: 375px) {
+  .main {
+    .main__services {
+      .container__fluid {
+        .services__wrap {
+          .services__slide {
+            .services__img-slide {
+              height: 167px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 @media screen and (min-width: 991px) {
   .container__fluid {
     max-width: 100%;
