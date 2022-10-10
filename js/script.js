@@ -124,6 +124,45 @@ $(document).ready(function() {
     updateOnImagesReady: true
   })
 
+  var mySwiper = new Swiper(".projects-slide", {
+    slidesPerView: 3,
+    centeredSlides: true,
+    roundLengths: true,
+    loop: true,
+    loopAdditionalSlides: 30,
+    autoplay: {
+      delay: 3000,
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+    },
+  })
+
+  var mySwiper2 = new Swiper(".wrap__human", {
+    slidesPerView: 3,
+    centeredSlides: true,
+    roundLengths: true,
+    loop: true,
+    lazy: true,
+    loopAdditionalSlides: 30,
+    autoplay: {
+      delay: 3000,
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+    },
+  })
+
   // Click show menu
   $('.menu__bars').click(function(e) {
     $('.header__menu').toggleClass('show__menu');

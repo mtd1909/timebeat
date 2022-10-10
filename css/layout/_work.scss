@@ -65,7 +65,7 @@
           height: 500px;
           img {
             border-radius: 5px;
-            filter: brightness(70%);
+            filter: brightness(60%);
             object-fit: cover;
             transition: all 0.4s ease;
             height: 100%;
@@ -89,18 +89,15 @@
           }
         }
       }
-      .owl-item {
-        left: -134px;
-      }
       &:hover {
         .owl-nav {
           .owl-prev {
-            top: 50%;
+            top: 40%;
             opacity: 1;
             visibility: visible;
           }
           .owl-next {
-            top: 50%;
+            top: 40%;
             opacity: 1;
             visibility: visible;
           }
@@ -115,7 +112,7 @@
           position: relative;
           overflow: hidden;
           z-index: 1;
-          transition: all 0.4s ease-in-out;
+          transition: all 0.3s ease;
           span {
             display: none;
           }
@@ -124,7 +121,6 @@
           position: absolute;
           top: 50%;
           left: 0;
-          transform: translateY(-50%);
           border: 5px solid var(--white-color);
           background-color: #E0ECE0;
           opacity: 0;
@@ -141,7 +137,6 @@
           position: absolute;
           top: 50%;
           right: 0;
-          transform: translateY(-50%);
           border: 5px solid var(--white-color);
           background-color: #E0ECE0;
           opacity: 0;
