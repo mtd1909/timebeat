@@ -1008,17 +1008,20 @@ input:-webkit-autofill {
   position: absolute;
   top: 350px;
   left: 100px;
+  z-index: 1;
 }
 .main__clients .container__fluid .shape6 {
   position: absolute;
   top: 300px;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 1;
 }
 .main__clients .container__fluid .shape7 {
   position: absolute;
   top: 400px;
   right: -270px;
+  z-index: 1;
 }
 .main__clients .container__fluid .container .clients__subtitle {
   position: relative;
@@ -1053,6 +1056,18 @@ input:-webkit-autofill {
 .main__gallery {
   padding-top: 192px;
   background-color: var(--black-color);
+  position: relative;
+}
+.main__gallery .shape__gallery {
+  position: absolute;
+  top: -225px;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+.main__gallery .shape__gallery img {
+  width: 100%;
+  filter: blur(10px);
 }
 .main__gallery .gallery__wrap-title {
   position: relative;

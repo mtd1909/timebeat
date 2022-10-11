@@ -1,6 +1,18 @@
 .main__gallery {
   padding-top: 192px;
   background-color: var(--black-color);
+  position: relative;
+  .shape__gallery {
+    position: absolute;
+    top: -225px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    img {
+      width: 100%;
+      filter: blur(10px);
+    }
+  }
   .gallery__wrap-title {
     position: relative;
     text-align: center;

@@ -8,17 +8,20 @@
       position: absolute;
       top: 350px;
       left: 100px;
+      z-index: 1;
     }
     .shape6 {
       position: absolute;
       top: 300px;
       left: 50%;
       transform: translateX(-50%);
+      z-index: 1;
     }
     .shape7 {
       position: absolute;
       top: 400px;
       right: -270px;
+      z-index: 1;
     }
     .container {
       .clients__subtitle {
